@@ -47,3 +47,16 @@ const isLeapYear= (year: number): boolean => {
     return(year % 4 === 0 && year % 100 !== 0) ||  year % 400 === 0
 }
 console.log(isLeapYear(2012))
+
+
+const froP = (person: string = 'you'): string => {
+    return(`One for ${person}, One for me`)
+}
+console.log(froP())
+
+
+function printTName(person: {first: string; last: string}): void  {
+    console.log(`${person.first} ${person.last}`)
+}
+printTName({first: 'Thomas', last: 'Janes'})
+

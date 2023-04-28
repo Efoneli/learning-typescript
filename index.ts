@@ -10,8 +10,19 @@ doSomething('Sarah Baggins', 12, false,)
 
 greet()
 
-function square(num: number) {
-     num * num
+function square(num: number):number {
+     return num * num
 }
 
 square(4)
+
+const add = (x: number, y: number): number => {
+    return x + y;
+};
+
+function rand(num:number) {
+    if(Math.random() < 0.5) {
+        return num.toString();
+    }
+    return num;
+}

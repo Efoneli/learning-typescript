@@ -130,20 +130,36 @@
 //     age: 2
 //   }
 
-type Rabbit = {
-    name: string;
-}
+// type Rabbit = {
+//     name: string;
+// }
 
-type PetAge = {
-    age: number;
-}
+// type PetAge = {
+//     age: number;
+// }
 
-type RabbitAge = Rabbit & PetAge & {
-    isCute: boolean
-};
+// type RabbitAge = Rabbit & PetAge & {
+//     isCute: boolean
+// };
 
-const myPet: RabbitAge = {
-    name: 'Jonas',
-    age: 2,
-    isCute: true,
-}
+// const myPet: RabbitAge = {
+//     name: 'Jonas',
+//     age: 2,
+//     isCute: true,
+// }
+
+// type ColorOfRoom = {
+//     color: string
+// }
+
+// type Rooms = {
+//     roomNumber: number
+// }
+
+// type ColorOfRoomRooms = ColorOfRoom & Rooms;
+
+// const myRoom = {
+//     color: 'baby pink',
+//     roomNumber: 3
+// }
+

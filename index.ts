@@ -224,3 +224,30 @@ type Point = {
 const testMe: Point [] = []
 testMe.push({x: 3, y: 'yamarita'})
 testMe.push({ x: 4, y:'flakes'})
+testMe.push({x: 3, y: 4})
+
+
+const boards: string[][] = [
+    ['X', 'O', 'X'],
+    ['X', 'O', 'X'],
+    ['X', 'O', 'X']
+]
+
+const ages: number[] = []
+
+const gameBoard: string[][] = [];
+
+type Product = {
+    name: string,
+    price: number,
+}
+
+
+function getTotal(products: Product[] ): number {
+    let total = 0;
+    for (let product of products) {
+        total += product.price;
+    }
+
+    return total;
+}

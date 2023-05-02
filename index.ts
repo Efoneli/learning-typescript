@@ -75,10 +75,39 @@
 //     console.log(`${song.title} - ${song.artist}`);
 // }
 
-type Point = {
-    x = number;
-    y = number;
-    z?: = number;
-};   
+// type Point = {
+//     x: number;
+//     y: number;
+//     z?: number;
+// };   
 
-const myPoint: Point = {1, 2, 3, 4, 5, 5}
+// const myPoint: Point = {x : 1, y :2}
+
+
+// type User = {
+//     readonly id : number;
+//     Username: String;
+// }
+
+// const User: User = {
+//     id: 123,
+//     Username: 'Batany'
+// }
+
+// console.log(User.id)
+// User.id = 23456
+
+  type Colorful = {
+    color: String
+  };
+
+  type pet = {
+    petNumber: number
+  };
+
+  type ColorfulPet = Colorful & pet;
+
+    const petColour: ColorfulPet = {
+        color: 'red',
+        petNumber: 5;
+  }

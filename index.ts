@@ -97,17 +97,35 @@
 // console.log(User.id)
 // User.id = 23456
 
-  type Colorful = {
-    color: String
-  };
+//   type Colorful = {
+//     color: String
+//   };
 
-  type pet = {
-    petNumber: number
-  };
+//   type pet = {
+//     petNumber: number
+//   };
 
-  type ColorfulPet = Colorful & pet;
+//   type ColorfulPet = Colorful & pet;
 
-    const petColour: ColorfulPet = {
-        color: 'red',
-        petNumber: 5;
-  }
+//     const petColour: ColorfulPet = {
+//         color: 'red',
+//         petNumber: 5;
+//   }
+
+//   type Cat = {
+//     lives: number
+//   }
+
+//   type Dog = {
+//     breed: string
+//   }
+
+//   type CatDog = Cat & Dog & {
+//     age: number
+//   }
+
+//   const Chris: CatDog = {
+//     lives: 4,
+//     breed: 'Chihuahua';
+//     age: 2
+//   }

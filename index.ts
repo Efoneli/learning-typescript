@@ -37,26 +37,48 @@
 //     console.log(msg);
 // }
 
-function twoFer(person: string = 'you' ): string {
-    return `one for ${person}, one for me.`;
-}
-console.log(twoFer());
-console.log(twoFer('Pearsons'));
+// function twoFer(person: string = 'you' ): string {
+//     return `one for ${person}, one for me.`;
+// }
+// console.log(twoFer());
+// console.log(twoFer('Pearsons'));
 
-const isLeapYear= (year: number): boolean => {
-    return(year % 4 === 0 && year % 100 !== 0) ||  year % 400 === 0
-}
-console.log(isLeapYear(2012))
-
-
-const froP = (person: string = 'you'): string => {
-    return(`One for ${person}, One for me`)
-}
-console.log(froP())
+// const isLeapYear= (year: number): boolean => {
+//     return(year % 4 === 0 && year % 100 !== 0) ||  year % 400 === 0
+// }
+// console.log(isLeapYear(2012))
 
 
-function printTName(person: {first: string; last: string}): void  {
-    console.log(`${person.first} ${person.last}`)
-}
-printTName({first: 'Thomas', last: 'Janes'})
+// const froP = (person: string = 'you'): string => {
+//     return(`One for ${person}, One for me`)
+// }
+// console.log(froP())
 
+
+// function printTName(person: {first: string; last: string}): void  {
+//     console.log(`${person.first} ${person.last}`)
+// }
+// printTName({first: 'Thomas', last: 'Janes'})
+
+// type Song = {
+//     title: string;
+//     artist: string;
+//     numStreams: number;
+//     credits: { producer: string; writer: string };
+// }
+
+// function calculatePayout (song:Song): number {
+//     song.numStreams * .0033
+// }
+
+// function printSong (song: Song): void {
+//     console.log(`${song.title} - ${song.artist}`);
+// }
+
+type Point = {
+    x = number;
+    y = number;
+    z?: = number;
+};   
+
+const myPoint: Point = {1, 2, 3, 4, 5, 5}

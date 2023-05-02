@@ -203,3 +203,6 @@ const getProfit = (movie: Movie): number => {
       return  grossWorldwide - budget
  
 }
+
+console.log(getProfit(dune))
+console.log(getProfit(cats))

@@ -1,36 +1,30 @@
 // function greet (person: string = 'stranger')  {
 //     return `Hi there ${person}`
 // }
-// const doSomething = ( person: string, age: number, isFunny: boolean) => {};
-// greet('sarah baaggigs')
-// doSomething('Sarah Baggins', 12, false,)
-// greet()
-// function square(num: number):number {
-//      return num * num
-// }
-// square(4)
-// const add = (x: number, y: number): number => {
-//     return x + y;
-// };
-// function rand(num:number) {
-//     if(Math.random() < 0.5) {
-//         return num.toString();
-//     }
-//     return num;
-// }
-// const colors = ['red', 'orange', 'yellow'];
-// colors.map(color => {
-//     return color.toUpperCase()
-// })
-// function printTwice(msg: string): void {
-//     console.log(msg);
-//     console.log(msg);
-// }
-function twoFer(person) {
-    return "one for " + person + ", one for me.";
-}
-var isLeapYear = function (year) {
-    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+var dune = {
+    title: 'Dune',
+    originalTitle: 'Dune Part One',
+    director: 'Dennis Villeneuve',
+    releaseYear: 2021,
+    boxOffice: {
+        budget: 1234345,
+        grossUS: 10234344,
+        grossWorldwide: 34390200
+    }
 };
-console.log(isLeapYear(2012));
-console.log(twoFer('Pearsons'));
+var cats = {
+    title: 'Cats',
+    director: 'Tom Hooper',
+    releaseYear: 2019,
+    boxOffice: {
+        budget: 902343,
+        grossUS: 21922302,
+        grossWorldwide: 2388024
+    }
+};
+var getProfit = function (movie) {
+    var _a = movie.boxOffice, grossWorldwide = _a.grossWorldwide, budget = _a.budget;
+    return grossWorldwide - budget;
+};
+console.log(getProfit(dune));
+console.log(getProfit(cats));

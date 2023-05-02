@@ -218,5 +218,9 @@ const bools: boolean[] = []
 
 type Point = {
     x: number,
-    y: number,
+    y: string
 }
+
+const testMe: Point [] = []
+testMe.push({x: 3, y: 'yamarita'})
+testMe.push({ x: 4, y:'flakes'})

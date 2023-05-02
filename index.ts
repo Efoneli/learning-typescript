@@ -129,3 +129,21 @@
 //     breed: 'Chihuahua';
 //     age: 2
 //   }
+
+type Rabbit = {
+    name: string;
+}
+
+type PetAge = {
+    age: number;
+}
+
+type RabbitAge = Rabbit & PetAge & {
+    isCute: boolean
+};
+
+const myPet: RabbitAge = {
+    name: 'Jonas',
+    age: 2,
+    isCute: true,
+}

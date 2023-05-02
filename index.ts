@@ -163,46 +163,60 @@
 //     roomNumber: 3
 // }
 
-type Movie = {
-    readonly title: string,
-    originalTitle?: string,
-    director: string,
-    releaseYear: number,
-    boxOffice: {
-        budget: number,
-        grossUS: number,
-        grossWorldwide: number,
-}
-}
+// type Movie = {
+//     readonly title: string,
+//     originalTitle?: string,
+//     director: string,
+//     releaseYear: number,
+//     boxOffice: {
+//         budget: number,
+//         grossUS: number,
+//         grossWorldwide: number,
+// }
+// }
 
-const dune: Movie = {
-    title: 'Dune',
-    originalTitle: 'Dune Part One',
-    director: 'Dennis Villeneuve',
-    releaseYear: 2021,
-    boxOffice: {
-        budget: 1234345,
-        grossUS: 10234344,
-        grossWorldwide: 34390200,
-    },
-};
+// const dune: Movie = {
+//     title: 'Dune',
+//     originalTitle: 'Dune Part One',
+//     director: 'Dennis Villeneuve',
+//     releaseYear: 2021,
+//     boxOffice: {
+//         budget: 1234345,
+//         grossUS: 10234344,
+//         grossWorldwide: 34390200,
+//     },
+// };
 
-const cats: Movie = {
-    title: 'Cats', 
-    director: 'Tom Hooper',
-    releaseYear: 2019,
-    boxOffice: {
-        budget: 902343,
-        grossUS: 21922302,
-        grossWorldwide: 2388024,
-    },
-}
+// const cats: Movie = {
+//     title: 'Cats', 
+//     director: 'Tom Hooper',
+//     releaseYear: 2019,
+//     boxOffice: {
+//         budget: 902343,
+//         grossUS: 21922302,
+//         grossWorldwide: 2388024,
+//     },
+// }
 
-const getProfit = (movie: Movie): number => {
-    const { grossWorldwide, budget } = movie.boxOffice
-      return  grossWorldwide - budget
+// const getProfit = (movie: Movie): number => {
+//     const { grossWorldwide, budget } = movie.boxOffice
+//       return  grossWorldwide - budget
  
-}
+// }
 
-console.log(getProfit(dune))
-console.log(getProfit(cats))
+// console.log(getProfit(dune))
+// console.log(getProfit(cats))
+
+const actUSers: string[] = []
+actUSers.push('Tony')
+
+const noOfPipo: number[] = []
+noOfPipo.push(23)
+
+const bools: boolean[] = []
+
+
+type Point = {
+    x: number,
+    y: number,
+}

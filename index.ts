@@ -319,3 +319,28 @@ const greet = (person: string | string[]): void => {
    }
 }
 
+enum OrderStatus {
+   PENDING,
+   SHIPPED,
+   DELIVERED,
+   RETRUNED,
+}
+
+   interface Person {
+      readonly id: number;
+      first: string;
+      last: string;
+      nickname?: string;
+      // sayHi: () => string;
+      sayHi(): string;
+   }
+
+   const thomason: Person = {
+      first: 'Thomas',
+      last: 'Hardy',
+      nickname: 'Tommo',
+      id: 12,
+      sayHi: () => {
+         return 'Hello!!'
+      }
+   }

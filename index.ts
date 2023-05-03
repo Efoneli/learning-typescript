@@ -270,77 +270,141 @@
 // coords.push({x: 23.44, y: 34.21})
 
 // let mood: 'Happy' | 'Sad' = 'Happy'
-// mood = 'Sad'
+// // mood = 'Sad'
 
-let highScore: number | boolean ;
+// let highScore: number | boolean ;
 
-let stuff : string[] | number[] = []
+// let stuff : string[] | number[] = []
 
-// type skillLevel ={
-//    Beginner: 'Beginner'
-//    Intermediate: 'Intermediate'
-//    Advanced: 'Advanced'
-//    Expert: 'Expert'
-// } 
+// type skillLevel = 'Beginner' | 'Intermediate' |'Advanced'|'Expert'
 
-type skillLevel = 'Beginner' | 'Intermediate' |'Advanced'|'Expert'
-
-type SkiSchoolStudent= {
-   name : string;
-   age : number,
-   sport: 'ski' | 'boolean';
+// type SkiSchoolStudent= {
+//    name : string;
+//    age : number,
+//    sport: 'ski' | 'boolean';
       
-   level : skillLevel
+//    level : skillLevel
+// }
+
+// type RGB = {
+//    r: number,
+//    g: number,
+//    b: number
+// }
+
+// type HSL = {
+//    h: number;
+//    s: number;
+//    l: number
+// }
+
+// type Both = RGB | HSL;
+
+// const colors : Both[] = [];
+
+// const greet = (person: string | string[]): void => {
+//    if (typeof person === 'string') {
+//       console.log(`Hello, ${person}`);
+//    }else {
+//       for (let p of person) {
+//          console.log(`Hello, ${person}`);
+//       }
+//    }
+// }
+
+// enum OrderStatus {
+//    PENDING,
+//    SHIPPED,
+//    DELIVERED,
+//    RETRUNED,
+// }
+
+//    interface Person {
+//       readonly id: number;
+//       first: string;
+//       last: string;
+//       nickname?: string;
+//       // sayHi: () => string;
+//       sayHi(): string;
+//    }
+
+//    const thomason: Person = {
+//       first: 'Thomas',
+//       last: 'Hardy',
+//       nickname: 'Tommo',
+//       id: 12,
+//       sayHi: () => {
+//          return 'Hello!!'
+//       }
+//    }
+
+//    interface Product {
+//       name: string;
+//       price: number;
+//       applyDiscount(discount: number) : number
+//    }
+
+//    const shoes: Product = {
+//       name: 'Pink Slipper';
+//       price: 120;
+//       applyDiscount(amount: number) {
+//          const newPrice = this.price * (1 - amount);
+//          this.price = newPrice;
+//          return this.price;
+//       },
+//    };
+
+//    console.log(shoes.applyDiscount(0.4));
+
+interface Dog {
+   name: string;
+   age: number;
 }
 
-type RGB = {
-   r: number,
-   g: number,
-   b: number
+interface Dog {
+   breed: String;
+   bark(): string
 }
 
-type HSL = {
-   h: number;
-   s: number;
-   l: number
-}
-
-type Both = RGB | HSL;
-
-const colors : Both[] = [];
-
-const greet = (person: string | string[]): void => {
-   if (typeof person === 'string') {
-      console.log(`Hello, ${person}`);
-   }else {
-      for (let p of person) {
-         console.log(`Hello, ${person}`);
-      }
+const elton: Dog = {
+   name: 'Elton',
+   age: 0.5,
+   breed: 'Australian Shephard',
+   bark() {
+      return 'WOOF!'
    }
 }
 
-enum OrderStatus {
-   PENDING,
-   SHIPPED,
-   DELIVERED,
-   RETRUNED,
+interface ServiceDog extends Dog {
+   job: 'drug sniffer' | 'bomb' | 'guide dog';
 }
 
-   interface Person {
-      readonly id: number;
-      first: string;
-      last: string;
-      nickname?: string;
-      // sayHi: () => string;
-      sayHi(): string;
-   }
+const conyo: ServiceDog = {
+   name: 'Conyo',
+   breed: 'Lab',
+   bark() {
+      return 'Bark!'
+   },
+   job: 'bomb'
+}
 
-   const thomason: Person = {
-      first: 'Thomas',
-      last: 'Hardy',
-      nickname: 'Tommo',
-      id: 12,
-      sayHi: () => {
-         return 'Hello!!'
-      }
-   }
+interface Person {
+   name: string;
+}
+
+interface Employee {
+   readonly id: number;
+   email: string
+}
+
+interface Engineer extends Person,Employee {
+   level: number;
+   languages: string []
+}
+
+const efoneli: Engineer = {
+   name: 'Efoneli',
+   email: 'efoneli@MediaList.com',
+   level: 23,
+   languages: ['Js', 'Python', 'C#']
+}

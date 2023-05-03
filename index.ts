@@ -252,22 +252,70 @@
 //     return total;
 // }
 
- type Point = {
-    x: number;
-    y: number; 
- }
+//  type Point = {
+//     x: number;
+//     y: number; 
+//  }
 
- type Loc  = {
-    lat: number;
-    long: number;
- }
+//  type Loc  = {
+//     lat: number;
+//     long: number;
+//  }
 
- let coordinates: Point | Loc = {x: 1, y: 34}
- coordinates = { lat: 23.23, long: 24.34 }
+//  let coordinates: Point | Loc = {x: 1, y: 34}
+//  coordinates = { lat: 23.23, long: 24.34 }
 
-const coords: (Point | Loc)[] = []
-coords.push({lat: 23.44, long: 34.21})
-coords.push({x: 23.44, y: 34.21})
+// const coords: (Point | Loc)[] = []
+// coords.push({lat: 23.44, long: 34.21})
+// coords.push({x: 23.44, y: 34.21})
 
-let mood: 'Happy' | 'Sad' = 'Happy'
-mood = 'Sad'
+// let mood: 'Happy' | 'Sad' = 'Happy'
+// mood = 'Sad'
+
+let highScore: number | boolean ;
+
+let stuff : string[] | number[] = []
+
+// type skillLevel ={
+//    Beginner: 'Beginner'
+//    Intermediate: 'Intermediate'
+//    Advanced: 'Advanced'
+//    Expert: 'Expert'
+// } 
+
+type skillLevel = 'Beginner' | 'Intermediate' |'Advanced'|'Expert'
+
+type SkiSchoolStudent= {
+   name : string;
+   age : number,
+   sport: 'ski' | 'boolean';
+      
+   level : skillLevel
+}
+
+type RGB = {
+   r: number,
+   g: number,
+   b: number
+}
+
+type HSL = {
+   h: number;
+   s: number;
+   l: number
+}
+
+type Both = RGB | HSL;
+
+const colors : Both[] = [];
+
+const greet = (person: string | string[]): void => {
+   if (typeof person === 'string') {
+      console.log(`Hello, ${person}`);
+   }else {
+      for (let p of person) {
+         console.log(`Hello, ${person}`);
+      }
+   }
+}
+

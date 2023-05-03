@@ -10,5 +10,8 @@
 //     name: 'Norma,'
 // };
 
+function printDouble(msg: string) {
+    console.log(msg)
+}
 
-console.log('HIIIE')
+printDouble('Hello pips')

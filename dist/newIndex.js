@@ -9,4 +9,7 @@
 //     eggsPerWeek: 5,
 //     name: 'Norma,'
 // };
-console.log('HIIIE');
+function printDouble(msg) {
+    console.log(msg);
+}
+printDouble('Hello pips');

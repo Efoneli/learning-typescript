@@ -14,4 +14,4 @@ function printDouble(msg: string) {
     console.log(msg)
 }
 
-printDouble('Hello pips')
+printDouble('Hello pips ')

@@ -12,4 +12,4 @@
 function printDouble(msg) {
     console.log(msg);
 }
-printDouble('Hello pips');
+printDouble('Hello pips ');

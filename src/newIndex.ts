@@ -15,3 +15,5 @@ function printDouble(msg: string) {
 }
 
 printDouble('Hello pips ')
+
+const btn = document.getElementById('btn')

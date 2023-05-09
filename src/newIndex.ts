@@ -1,3 +1,12 @@
+const input = document.getElementById('todoInput')!;
+const btn = document.getElementById('btn')!;
+
+btn.addEventListener('click', function () {
+    alert('clicked');
+});
+
+
+
 // interface Chicken {
 //     breed: string;
 //     eggsPerWeek: number;
@@ -10,10 +19,10 @@
 //     name: 'Norma,'
 // };
 
-function printDouble(msg: string) {
-    console.log(msg)
-}
+// function printDouble(msg: string) {
+//     console.log(msg)
+// }
 
-printDouble('Hello pips ')
+// printDouble('Hello pips ')
 
-const btn = document.getElementById('btn')
+// const btn = document.getElementById('btn')

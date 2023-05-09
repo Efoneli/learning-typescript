@@ -356,55 +356,69 @@
 
 //    console.log(shoes.applyDiscount(0.4));
 
-interface Dog {
-   name: string;
-   age: number;
+// interface Dog {
+//    name: string;
+//    age: number;
+// }
+
+// interface Dog {
+//    breed: String;
+//    bark(): string
+// }
+
+// const elton: Dog = {
+//    name: 'Elton',
+//    age: 0.5,
+//    breed: 'Australian Shephard',
+//    bark() {
+//       return 'WOOF!'
+//    }
+// }
+
+// interface ServiceDog extends Dog {
+//    job: 'drug sniffer' | 'bomb' | 'guide dog';
+// }
+
+// const conyo: ServiceDog = {
+//    name: 'Conyo',
+//    breed: 'Lab',
+//    bark() {
+//       return 'Bark!'
+//    },
+//    job: 'bomb'
+// }
+
+// interface Person {
+//    name: string;
+// }
+
+// interface Employee {
+//    readonly id: number;
+//    email: string
+// }
+
+// interface Engineer extends Person,Employee {
+//    level: number;
+//    languages: string []
+// }
+
+// const efoneli: Engineer = {
+//    name: 'Efoneli',
+//    email: 'efoneli@MediaList.com',
+//    level: 23,
+//    languages: ['Js', 'Python', 'C#']
+// }
+
+
+// generic funtion
+function identity<T>(item): T {
+   return item
 }
 
-interface Dog {
-   breed: String;
-   bark(): string
-}
+identity<number> (8)
+identity<string> ('hello')
 
-const elton: Dog = {
-   name: 'Elton',
-   age: 0.5,
-   breed: 'Australian Shephard',
-   bark() {
-      return 'WOOF!'
-   }
-}
-
-interface ServiceDog extends Dog {
-   job: 'drug sniffer' | 'bomb' | 'guide dog';
-}
-
-const conyo: ServiceDog = {
-   name: 'Conyo',
-   breed: 'Lab',
-   bark() {
-      return 'Bark!'
-   },
-   job: 'bomb'
-}
-
-interface Person {
-   name: string;
-}
-
-interface Employee {
-   readonly id: number;
-   email: string
-}
-
-interface Engineer extends Person,Employee {
-   level: number;
-   languages: string []
-}
-
-const efoneli: Engineer = {
-   name: 'Efoneli',
-   email: 'efoneli@MediaList.com',
-   level: 23,
-   languages: ['Js', 'Python', 'C#']
+function getRandomNumberElement<T>(list: T[]) : T {
+const randIdx = Math.floor(Math.random() * list.length);
+return list[randIdx]; 
 }

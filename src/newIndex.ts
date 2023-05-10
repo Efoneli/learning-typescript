@@ -1,9 +1,12 @@
-const input = document.getElementById('todoInput')!;
-const btn = document.getElementById('btn')!;
+const input = document.getElementById('todoInput')! as HTMLInputElement;
+const btn = document.getElementById('btn')! as HTMLButtonElement;
 
 btn.addEventListener('click', function () {
-    alert('clicked');
+    console.log('clicked')
+    console.log(input.value)
+    input.value = '';
 });
+
 
 
 

@@ -1,4 +1,4 @@
-const input = document.getElementById('todoInput')! as HTMLInputElement;
+const input = document.getElementById('todoinput')! as HTMLInputElement;
 const btn = document.getElementById('btn')! as HTMLButtonElement;
 
 btn.addEventListener('click', function () {

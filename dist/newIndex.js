@@ -9,8 +9,4 @@
 //     eggsPerWeek: 5,
 //     name: 'Norma,'
 // };
-function printDouble(msg) {
-    console.log(msg);
-}
-printDouble('Hello pips ');
-var btn = document.getElementById('btn');
+//  
